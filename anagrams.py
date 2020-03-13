@@ -24,6 +24,7 @@ def alphabetize(string):
         abc
 
     """
+
     return "".join(sorted(string.lower()))
 
 
@@ -46,7 +47,6 @@ def find_anagrams(words):
         # anagrams[alpha_word]=[w for w in words if w == alpha_word]
         else:
             anagrams[alphabetize(word)] = [word]
-
     return anagrams
 
 
